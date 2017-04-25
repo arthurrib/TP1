@@ -8,24 +8,25 @@
 #include <iostream>
 
 Ball::Ball()
-    : r(0.1), x(0), y(0), vx(0.3), vy(-0.1), g(9.8), m(1),
+    : r(0.1), vx(0.3), vy(-0.1), g(9.8), m(1), // Removidos os valores do método construtor para x e y, que serão definidos pelos métodos get e set
       xmin(-1), xmax(1), ymin(-1), ymax(1)
 {
 }
 
-void Ball::setX(int _x) {
+// definição dos métodos Get e set, chamados pela main no test-ball.cpp
+void Ball::setX(double _x) {
 	x = _x;
 }
 
-int Ball::getX() {
+double Ball::getX() {
 	return x;
 }
 
-void Ball::setY(int _y) {
+void Ball::setY(double _y) {
 	y = _y;
 }
 
-int Ball::getY() {
+double Ball::getY() {
 	return y;
 }
 

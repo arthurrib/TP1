@@ -15,10 +15,11 @@ public:
   Ball() ;
   void step(double dt) ;
   void display() ;
-  void setX(int _x);
-  int getX();
-  void setY(int _y);
-  int getY();
+  // Declaração dos métodos públicos getx e setx, gety e sety, como solicitado no item 1 da questão 5
+  void setX(double _x);
+  double getX();
+  void setY(double _y);
+  double getY();
 
 protected:
   // Data members
