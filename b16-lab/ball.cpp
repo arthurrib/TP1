@@ -13,6 +13,22 @@ Ball::Ball()
 {
 }
 
+void Ball::setX(int _x) {
+	x = _x;
+}
+
+int Ball::getX() {
+	return x;
+}
+
+void Ball::setY(int _y) {
+	y = _y;
+}
+
+int Ball::getY() {
+	return y;
+}
+
 void Ball::step(double dt)
 {
   double xp = x + vx * dt;

@@ -15,6 +15,10 @@ public:
   Ball() ;
   void step(double dt) ;
   void display() ;
+  void setX(int _x);
+  int getX();
+  void setY(int _y);
+  int getY();
 
 protected:
   // Data members
