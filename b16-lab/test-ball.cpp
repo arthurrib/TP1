@@ -22,6 +22,7 @@ int main(int argc, char** argv)
     ball.step(dt) ;
     ball.display() ;
   }*/
-  ball.run(ball, dt);
+  
+  ball.run(ball, dt); // chamada da função run criada na task 10
   return 0 ;
 }

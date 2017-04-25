@@ -30,7 +30,7 @@ double Ball::getY() {
 	return y;
 }
 
-void Ball::run(Ball & s, double dt) {
+void Ball::run(Ball & s, double dt) { // Definição da função run, como exemplificado na task 10
 	for (int i = 0; i < 100; ++i) { s.step(dt); s.display(); }
 }
 

@@ -20,7 +20,7 @@ public:
   double getX();
   void setY(double _y);
   double getY();
-  void run(Ball & s, double dt);
+  void run(Ball & s, double dt); // declaração da função run, como solicitado na task 10
 
 protected:
   // Data members
