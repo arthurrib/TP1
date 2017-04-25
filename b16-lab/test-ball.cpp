@@ -12,8 +12,8 @@ int main(int argc, char** argv)
   const double dt = 1.0/30 ;
   
   // seta valores iniciais para a posiição da bola
-  ball.setX(0.5);
-  ball.setY(0.2);
+  ball.setX(0);
+  ball.setY(0);
   // printa a posição inicial da bola no console
   std::cout << ball.getX() << std::endl;
   std::cout << ball.getY() << std::endl;
