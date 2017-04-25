@@ -1,6 +1,5 @@
-﻿  test-ball.cpp
+﻿  Ignorando... (nenhuma alteração relevante detectada)
+  test-ball.cpp
   ball.cpp
-  Gerando Código...
-ball.obj : warning LNK4075: ignorando '/EDITANDCONTINUE' devido a especificação '/SAFESEH'
-  ball.vcxproj -> C:\Users\Stark\Documents\Git\TP1\TP1\b16-lab\Debug\ball.exe
-  ball.vcxproj -> C:\Users\Stark\Documents\Git\TP1\TP1\b16-lab\Debug\ball.pdb (Full PDB)
+  ball.vcxproj -> C:\Users\Stark\Documents\Git\TP1\b16-lab\Debug\ball.exe
+  ball.vcxproj -> C:\Users\Stark\Documents\Git\TP1\b16-lab\Debug\ball.pdb (Full PDB)
