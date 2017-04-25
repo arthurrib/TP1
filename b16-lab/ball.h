@@ -20,6 +20,7 @@ public:
   double getX();
   void setY(double _y);
   double getY();
+  void run(Ball & s, double dt);
 
 protected:
   // Data members

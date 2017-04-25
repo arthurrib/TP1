@@ -17,9 +17,11 @@ int main(int argc, char** argv)
   // printa a posição inicial da bola no console
   std::cout << ball.getX() << std::endl;
   std::cout << ball.getY() << std::endl;
-  for (int i = 0 ; i < 100 ; ++i) {
+  
+  /*for (int i = 0 ; i < 100 ; ++i) {
     ball.step(dt) ;
     ball.display() ;
-  }
+  }*/
+  ball.run(ball, dt);
   return 0 ;
 }
