@@ -89,12 +89,7 @@ protected:
 	double naturalLength;
 	double stiffness;
 	double damping;
-  /* INCOMPLETE: TYPE YOUR CODE HERE 
-     Insira atributos protegidos que permitem calcular a forca 
-     e a energia de uma mola. Dica: veja o construtor acima.
-     Adicione tambem 2 ponteiros para objetos do tipo Mass 
-     (um para cada extremidade da mola).
-   */
+
 } ;
 
 /* ---------------------------------------------------------------- */

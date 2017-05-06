@@ -121,37 +121,17 @@ Mass * Spring::getMass2() const
 Vector2 Spring::getForce() const
 {
   Vector2 F ;
+  Vector2 u = operator-(mass2->getPosition(), mass1->getPosition());
 
-  /* INCOMPLETE: TYPE YOUR CODE HERE 
-     Este metodo calcula a forca desta mola usando as equacoes
-     para oscilador harmonico amortecido 
-     https://en.wikipedia.org/wiki/Harmonic_oscillator#Damped_harmonic_oscillator
-     ou seja:
-     F = -K*x - c*v, onde:
-       K: coeficiente elastico da mola (stiffness),
-       x: o vetor que leva da posicao atual da mola ate 
-          a posicao de repouso.
-       c: coeficiente de amortecimento (damping)
-       v: vetor de velocidade da mola.
+  double cumprimento = u.norm();
 
-     Procedimento:
-     1. Calcule o vetor u da distancia entre as 
-        duas extremidades da mola. 
-	Dica: use subtracao de Vector2, i.e., operator-()
-     2. Calcule o comprimento atual da mola. 
-        Dica: use o metodo norm().
-     3. Calcule o vetor unitario da direcao da mola, i.e.
-        o resultado de (1) dividido pelo resultado de (2).
-     4. Calcule o vetor da velocidade de alongamento entre 
-        as duas massas, i.e., o produto interno (dot()) entre
-	v2-v1 e o vetor unitario da direcao da mola 
-	(resultado de 3).
-     5. O modulo da forca eh entao calculado por:
-          (comprimento_da_mola_em_repouso - comprimento_atual)*stiffness + 
-          velocidada_de_alongamento * damping 
-     6. O vetor da forca eh entao calculado pelo resultado
-        de (5) multiplicado pelo vetor de direcao da mola (3).	
-   */
+  Vector2 VetUnit = (u / cumprimento);
+
+  double VelAlong = dot((mass2->getVelocity() - mass1->getVelocity()), VetUnit);
+
+  double modulo = (cumprimento - naturalLength) * stiffness + VelAlong * damping;
+
+  F = modulo * VetUnit;
 
   return F ;
 }
