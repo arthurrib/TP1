@@ -2,8 +2,8 @@
 ### Primeira tarefa da disciplina de Técnicas de Programação da Universidade de Brasília.
 
 # Bouncing Ball
-	O programa simula o movimento de uma bola de massa **m**, em um ambiente com gravidade **g** e delimitado por uma caixa de coordenadas **xmin, xmax, ymin, ymax**.
-	Para essa parte do projeto, utilizaremos **apenas** a biblioteca _ball.h_, que contém a declaração das funções e variáveis que serão utilizadas pelos arquivos _ball.cpp_, que contém o método construtor que define valores iniciais às variáveis e a definição das funções declaradas em _ball.h_, e o arquivo _test-ball.cpp_, que contém a função main do programa, dando início ao movimento da bola e printando os resultados a cada intervalo de tempo definido por **dt**.
+O programa simula o movimento de uma bola de massa **m**, em um ambiente com gravidade **g** e delimitado por uma caixa de coordenadas **xmin, xmax, ymin, ymax**.
+Para essa parte do projeto, utilizaremos **apenas** a biblioteca _ball.h_, que contém a declaração das funções e variáveis que serão utilizadas pelos arquivos _ball.cpp_, que contém o método construtor que define valores iniciais às variáveis e a definição das funções declaradas em _ball.h_, e o arquivo _test-ball.cpp_, que contém a função main do programa, dando início ao movimento da bola e printando os resultados a cada intervalo de tempo definido por **dt**.
 -------------
 
 ## Bibliotecas:
